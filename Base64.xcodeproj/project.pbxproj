@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19372CB61B676E1B005B627D /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 19372CB21B676E1B005B627D /* GTMBase64.m */; };
+		19372CB71B676E1B005B627D /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 19372CB51B676E1B005B627D /* NSData+Base64.m */; };
 		196E5BD21B65C8B0004A3967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 196E5BD11B65C8B0004A3967 /* main.m */; };
 		196E5BD51B65C8B0004A3967 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 196E5BD41B65C8B0004A3967 /* AppDelegate.m */; };
 		196E5BD81B65C8B0004A3967 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196E5BD71B65C8B0004A3967 /* ViewController.m */; };
@@ -14,6 +16,7 @@
 		196E5BDD1B65C8B0004A3967 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196E5BDC1B65C8B0004A3967 /* Images.xcassets */; };
 		196E5BE01B65C8B0004A3967 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 196E5BDE1B65C8B0004A3967 /* LaunchScreen.xib */; };
 		196E5BEC1B65C8B0004A3967 /* Base64Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 196E5BEB1B65C8B0004A3967 /* Base64Tests.m */; };
+		196E5BF71B65C900004A3967 /* CommonFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 196E5BF61B65C900004A3967 /* CommonFunc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19372CB11B676E1B005B627D /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		19372CB21B676E1B005B627D /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		19372CB31B676E1B005B627D /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		19372CB41B676E1B005B627D /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		19372CB51B676E1B005B627D /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		196E5BCC1B65C8B0004A3967 /* Base64.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Base64.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		196E5BD01B65C8B0004A3967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		196E5BD11B65C8B0004A3967 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +48,8 @@
 		196E5BE51B65C8B0004A3967 /* Base64Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Base64Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		196E5BEA1B65C8B0004A3967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		196E5BEB1B65C8B0004A3967 /* Base64Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base64Tests.m; sourceTree = "<group>"; };
+		196E5BF51B65C900004A3967 /* CommonFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonFunc.h; path = ../CommonFunc.h; sourceTree = "<group>"; };
+		196E5BF61B65C900004A3967 /* CommonFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonFunc.m; path = ../CommonFunc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19372CB01B676E1B005B627D /* base64 */ = {
+			isa = PBXGroup;
+			children = (
+				196E5BF51B65C900004A3967 /* CommonFunc.h */,
+				196E5BF61B65C900004A3967 /* CommonFunc.m */,
+				19372CB11B676E1B005B627D /* GTMBase64.h */,
+				19372CB21B676E1B005B627D /* GTMBase64.m */,
+				19372CB31B676E1B005B627D /* GTMDefines.h */,
+				19372CB41B676E1B005B627D /* NSData+Base64.h */,
+				19372CB51B676E1B005B627D /* NSData+Base64.m */,
+			);
+			path = base64;
+			sourceTree = "<group>";
+		};
 		196E5BC31B65C8B0004A3967 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,7 @@
 		196E5BCE1B65C8B0004A3967 /* Base64 */ = {
 			isa = PBXGroup;
 			children = (
+				19372CB01B676E1B005B627D /* base64 */,
 				196E5BD31B65C8B0004A3967 /* AppDelegate.h */,
 				196E5BD41B65C8B0004A3967 /* AppDelegate.m */,
 				196E5BD61B65C8B0004A3967 /* ViewController.h */,
@@ -219,7 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196E5BF71B65C900004A3967 /* CommonFunc.m in Sources */,
+				19372CB61B676E1B005B627D /* GTMBase64.m in Sources */,
 				196E5BD81B65C8B0004A3967 /* ViewController.m in Sources */,
+				19372CB71B676E1B005B627D /* NSData+Base64.m in Sources */,
 				196E5BD51B65C8B0004A3967 /* AppDelegate.m in Sources */,
 				196E5BD21B65C8B0004A3967 /* main.m in Sources */,
 			);
@@ -416,6 +444,7 @@
 				196E5BF11B65C8B0004A3967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		196E5BF21B65C8B0004A3967 /* Build configuration list for PBXNativeTarget "Base64Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +453,7 @@
 				196E5BF41B65C8B0004A3967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

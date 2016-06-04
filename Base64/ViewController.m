@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CommonFunc.h"
 
 @interface ViewController ()
 
@@ -16,8 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *str1 = @"q12344444444444444444444444444444444444k";//AWhdCwTZLyaRDt6Er8mbWQ==
+    NSLog(@"解密=========%@",[CommonFunc decryptWithText:@"GSTgig0ueNheMcXaPZTvEV4xxdo9lO8RXjHF2j2U7xFbrraIgprLzUoQ4SOIL9DH"]);
+    NSLog(@"加密========%@",[CommonFunc encryptWithText:str1]);
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
